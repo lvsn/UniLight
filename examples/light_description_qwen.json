@@ -1,0 +1,16 @@
+{   
+    "dataset0":{
+        "scene0": {
+            "000": {
+                "One Paragraph": "The primary natural light source is the sun, positioned in the upper left relative to the view, emitting warm-hued, strong brightness that casts distinct shadows across the scene. No artificial lights are active or visible. The overall color of the scene is warm with golden and earthy tones."
+            }
+        }
+    },
+    "dataset1":{
+        "scene0": {
+            "003": {
+                "One Paragraph": "Natural light enters through large windows on the left, illuminating the left portion of the space with bright, diffused light. Ceiling-mounted cylindrical fixtures suspended from the wooden ceiling provide additional ambient illumination. The scene exhibits warm-toned lighting."
+            }
+        }
+    }
+}

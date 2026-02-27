@@ -1,0 +1,19 @@
+tqdm
+numpy
+transformers==4.57.1 # 4.57.3 has a bug loading local models
+sentencepiece
+accelerate
+diffusers
+huggingface-hub
+pillow
+opencv-python
+skylibs
+matplotlib
+gradio
+openexr
+pyshtools
+torch==2.7.1
+torchvision
+xformers
+protobuf
+triton

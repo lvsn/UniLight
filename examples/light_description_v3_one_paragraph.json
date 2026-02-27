@@ -1,0 +1,16 @@
+{   
+    "dataset0":{
+        "scene0": {
+            "000": {
+                "One Paragraph": "Warm golden sunlight filters through the trees from the upper left, casting soft, diffused light across the scene. The light creates dappled shadows on the ground, highlighting the autumn leaves and foliage. The overall color of the scene is rich with earthy tones, enhanced by the gentle illumination."
+            }
+        }
+    },
+    "dataset1":{
+        "scene0": {
+            "003": {
+                "One Paragraph": "Natural light from large windows on the left side of the scene provides a bright and even illumination, casting soft shadows. Recessed strip lights embedded in the ceiling offer additional neutral white light, enhancing the overall brightness. The scene has a warm, inviting color tone due to the combination of natural and artificial light sources."
+            }
+        }
+    }
+}

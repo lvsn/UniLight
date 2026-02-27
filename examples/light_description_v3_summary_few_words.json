@@ -1,0 +1,16 @@
+{   
+    "dataset0":{
+        "scene0": {
+            "000": {
+                "One Paragraph": "Warm golden sunlight from the upper left, soft diffused light, dappled shadows, rich earthy tones."
+            }
+        }
+    },
+    "dataset1":{
+        "scene0": {
+            "003": {
+                "One Paragraph": "Natural light from large windows, soft shadows, recessed strip lights, warm inviting tone."
+            }
+        }
+    }
+}
