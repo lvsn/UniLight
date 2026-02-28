@@ -223,7 +223,7 @@ class LightMultiEncoderModel(nn.Module):
 
         # 2. Get the full sequence output from the encoder
         if 'envmap' in modal or 'irradiance' in modal or 'rgb' in modal:
-            if isinstance(modal_data, (str, Image)):
+            if isinstance(modal_data, (str, Image.Image)):
                 modal_data = preprocess_image(modal, modal_data).unsqueeze(0).to(next(encoder.parameters()).device)
             encoder_kwargs = {
                 'pixel_values': modal_data,
