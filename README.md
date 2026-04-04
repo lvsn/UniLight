@@ -50,11 +50,17 @@ Pretrained weights are available at [🤗 Hugging Face](https://huggingface.co/z
 
 Download the checkpoints and place them under `checkpoints/`:
 
+### Model trained with InternVL3 light descriptions (as in the paper)
 | Model | Path | Purpose |
 |---|---|---|
 | UniLight Encoder | `checkpoints/unilight_outputs/8_tokens_sh3-1024x1024_512/checkpoint-final` | Unified lighting encoder |
 | LDR Envmap Generation | `checkpoints/envmap_outputs/8_tokens_sh3-1024x1024_512/checkpoint-100000` | SD3.5 fine-tuned for envmap generation |
 | Relighting | `checkpoints/light_outputs/8_tokens_sh3-1024x1024_512/checkpoint-100000` | SD3.5 fine-tuned for scene relighting |
+
+### Model trained with Qwen3-VL light descriptions (works better)
+| Model | Path | Purpose |
+|---|---|---|
+| UniLight Encoder | `checkpoints/unilight_outputs/8_tokens_sh3-1024x1024_512-qwen3/checkpoint-final` | Unified lighting encoder |
 
 The envmap generation and relighting models also require the base `stabilityai/stable-diffusion-3.5-medium` model from HuggingFace Hub.
 
