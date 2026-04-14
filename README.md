@@ -7,7 +7,7 @@
 </a>
 </p>
 
-<p align="center"><strong>CVPR 2026</strong></p>
+<p align="center"><strong>CVPR 2026 (Highlight)</strong></p>
 
 
 
