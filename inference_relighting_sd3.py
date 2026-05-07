@@ -116,7 +116,7 @@ def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description="Minimal relighting inference with a single target-lighting modality")
 
     # Target lighting – exactly one should be specified
-    p.add_argument("--envmap",      default='examples/target_lighting/001_envmap_512x512.exr', help="Target envmap path (.exr, .hdr, .png, …)")
+    p.add_argument("--envmap",      default='examples/target_lighting/outdoor_000_envmap.exr', help="Target envmap path (.exr, .hdr, .png, …)")
     p.add_argument("--rgb",         default=None, help="Target RGB lighting crop")
     p.add_argument("--irradiance",  default=None, help="Target irradiance image")
     p.add_argument("--text",        default=None, help="Target lighting description string")

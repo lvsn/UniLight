@@ -7,11 +7,36 @@ import cv2
 from envmap import EnvironmentMap, rotation_matrix
 import ezexr
 from torchvision.transforms import functional as tvf
-from hdr_utils import reexpose_image, autoexpose
 import json
 import multiprocessing as mp
 from functools import partial
 
+def autoexpose(img_input, exposure_factor=0.17):
+    # The input image must be in gamma space for this algorithm to work correctly
+    img_gamma = np.copy(img_input)
+    img_gamma = np.clip(img_gamma ** (1 / 2.2), 0, None)
+    img_gamma = np.nan_to_num(img_gamma, nan=0.0, posinf=0.0, neginf=0.0)
+
+    low_thres = 1e-3
+    high_thres = np.percentile(img_gamma, 95)
+    mask = (
+        np.sum(np.logical_and(img_gamma < high_thres, img_gamma > low_thres), axis=2, keepdims=True)
+        > 0
+    )
+    mask = np.tile(mask, (1, 1, 3))
+    px = img_gamma[mask].reshape((-1, 3))
+    factor = exposure_factor / np.exp(np.mean(np.log(grayscale(px) + 1e-4)))
+
+    img_gamma = factor * img_gamma
+
+    factor_linear = factor ** 2.2
+    img_linear = img_gamma ** 2.2
+
+    return img_linear, factor_linear
+
+def reexpose_image(image: np.ndarray, factor: float) -> np.ndarray:
+    image = np.copy(image)
+    return image * factor
 
 def get_base_name_from_path(envmap_path: str, folder_type: str) -> str:
     """
