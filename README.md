@@ -245,8 +245,9 @@ If you find this work useful, please cite:
 @inproceedings{zhang2026unilight,
   title={UniLight: A Unified Representation for Lighting},
   author={Zhang, Zitian and Georgiev, Iliyan and Fischer, Michael and Hold-Geoffroy, Yannick and Lalonde, Jean-Fran{\c{c}}ois and Deschaintre, Valentin},
-  booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
-  year = {2026}
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={29684--29694},
+  year={2026}
 }
 ```
 
