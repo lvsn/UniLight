@@ -1,4 +1,4 @@
-<h1 align="center">UniLight: Unified Multi-Modal Lighting Representation</h1>
+<h1 align="center">UniLight: A Unified Representation for Lighting</h1>
 
 <p align="center">
 <a href="https://lvsn.github.io/UniLight"><img src="https://img.shields.io/badge/Project-Website-red"></a>
